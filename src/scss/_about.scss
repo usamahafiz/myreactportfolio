@@ -1,0 +1,80 @@
+.about-section{
+    margin-top: 60px;
+    margin-bottom: 55px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    // box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    .about-left{
+        // background: linear-gradient(270deg, #e8eceb, #d0d3d3);
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        .profile-img{
+            Image{
+                border-radius: 85%;
+                border: 5px solid #fff;
+            }
+        }
+
+        .profile-info{
+            h4{
+                font-size: 28px;
+                margin-bottom: 8px;
+            }
+            p{
+                font-size: 16px;
+                margin-bottom: 5px;
+                
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+.right-section{
+    padding: 10px;
+    // h5{
+    //     font-size: 40px;
+    //     color: #1d3557;
+    //     border-bottom: 2px solid transparent; // Transparent initial border
+    //     // width:  80px;
+    //     transition: border-color 0.3s ease;
+        
+    //     &:hover {
+  
+    //       cursor: pointer;
+    //     }
+      
+    // }
+    h5 {
+        font-size: 40px;
+        color: #1d3557;
+        position: relative; /* Allows absolute positioning of the border */
+        display: inline-block; /* Shrinks the width to the text content */
+    }
+    
+    h5::after {
+        content: "";
+        display: block;
+        width: 80%; /* Adjust this percentage to control the width of the line */
+        height: 3px;
+        background-color: #1d3557; /* Same color as the heading */
+        position: absolute;
+        bottom: 0;
+        left: 1%; /* Adjust left to center the line */
+        transition: width 0.3s ease;
+    }
+    
+    h5:hover::after {
+        width: 100%; /* Expand the line on hover */
+    }
+    
+    p {
+        margin-bottom: 20px;
+        line-height: 1.5;
+        font-size: 1rem;
+      }
+}
+
+}
