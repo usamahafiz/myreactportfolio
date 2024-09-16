@@ -6,13 +6,13 @@ import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCAIJkkLMF2no6waTa2ZAPmnLMOzzhFEc4",
-  authDomain: "my-portfolio-64.firebaseapp.com",
-  projectId: "my-portfolio-64",
-  storageBucket: "my-portfolio-64.appspot.com",
-  messagingSenderId: "951706751147",
-  appId: "1:951706751147:web:7bb0ebbcee37302c5227ee",
-  measurementId: "G-XPX6MR3QE7"
+  apiKey: process.env.REACT_APP_FIREBASE_apikey,
+  authDomain: process.env.REACT_APP_FIREBASE_authDomain,
+  projectId: process.env.REACT_APP_FIREBASE_projectId,
+  storageBucket: process.env.REACT_APP_FIREBASE_storageBucket,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_messagingSenderId,
+  appId: process.env.REACT_APP_FIREBASE_appId,
+  measurementId: process.env.REACT_APP_FIREBASE_measurementId
 };
 
 // Initialize Firebase
